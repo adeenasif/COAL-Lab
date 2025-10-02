@@ -7,17 +7,17 @@ INCLUDE Irvine32.inc
 
 .code
 main PROC
-    mov edx, OFFSET msg1
-    call WriteString
-    call Crlf
+    mov edx, OFFSET msg1    ; stores first string
+    call WriteString        ; prints first string
+    call Crlf               ; new line
 
-    jmp L3
-    mov edx, OFFSET msg2
-    call WriteString
+    jmp L3               ; unconditional jump
+    mov edx, OFFSET msg2 ; gets skipped
+    call WriteString     ; gets skipped
 
     L3:
-        mov edx, OFFSET msg3
-        call WriteString
+        mov edx, OFFSET msg3  ; stores third string
+        call WriteString      ; prints third string
 
 exit
 main ENDP
