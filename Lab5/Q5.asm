@@ -17,7 +17,7 @@ main PROC
     call dumpregs
 
     ; PART c
-    TYPE operator is used to automatically calculate the correct offset
+    ; TYPE operator is used to automatically calculate the correct offset
 exit
 main ENDP
 END main
